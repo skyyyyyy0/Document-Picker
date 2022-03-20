@@ -16,6 +16,8 @@
 		3341F25127E7F0170091DFA8 /* Document_PickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3341F25027E7F0170091DFA8 /* Document_PickerTests.swift */; };
 		3341F25B27E7F0170091DFA8 /* Document_PickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3341F25A27E7F0170091DFA8 /* Document_PickerUITests.swift */; };
 		3341F25D27E7F0170091DFA8 /* Document_PickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3341F25C27E7F0170091DFA8 /* Document_PickerUITestsLaunchTests.swift */; };
+		3341F26A27E7F0760091DFA8 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 3341F26927E7F0760091DFA8 /* GoogleService-Info (1).plist */; };
+		3341F26D27E7F3EB0091DFA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3341F26C27E7F3EB0091DFA8 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3341F25627E7F0170091DFA8 /* Document PickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Document PickerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3341F25A27E7F0170091DFA8 /* Document_PickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document_PickerUITests.swift; sourceTree = "<group>"; };
 		3341F25C27E7F0170091DFA8 /* Document_PickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document_PickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3341F26927E7F0760091DFA8 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		3341F26C27E7F3EB0091DFA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				3341F23927E7F0120091DFA8 /* AppDelegate.swift */,
 				3341F23B27E7F0120091DFA8 /* SceneDelegate.swift */,
+				3341F26C27E7F3EB0091DFA8 /* ContentView.swift */,
 				3341F23D27E7F0120091DFA8 /* ViewController.swift */,
 				3341F23F27E7F0120091DFA8 /* Main.storyboard */,
 				3341F24227E7F0160091DFA8 /* Assets.xcassets */,
 				3341F24427E7F0160091DFA8 /* LaunchScreen.storyboard */,
 				3341F24727E7F0160091DFA8 /* Info.plist */,
+				3341F26927E7F0760091DFA8 /* GoogleService-Info (1).plist */,
 			);
 			path = "Document Picker";
 			sourceTree = "<group>";
@@ -215,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 3341F22D27E7F0120091DFA8;
+			packageReferences = (
+				3341F26B27E7F2F30091DFA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3341F23727E7F0120091DFA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +243,7 @@
 				3341F24627E7F0160091DFA8 /* LaunchScreen.storyboard in Resources */,
 				3341F24327E7F0160091DFA8 /* Assets.xcassets in Resources */,
 				3341F24127E7F0120091DFA8 /* Main.storyboard in Resources */,
+				3341F26A27E7F0760091DFA8 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +270,7 @@
 			files = (
 				3341F23E27E7F0120091DFA8 /* ViewController.swift in Sources */,
 				3341F23A27E7F0120091DFA8 /* AppDelegate.swift in Sources */,
+				3341F26D27E7F3EB0091DFA8 /* ContentView.swift in Sources */,
 				3341F23C27E7F0120091DFA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +609,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3341F26B27E7F2F30091DFA8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 3341F22E27E7F0120091DFA8 /* Project object */;
 }
