@@ -28,7 +28,7 @@ struct ContentView: View {
             }
             .alert(isPresented: $alert){
                 
-                Alert(title: Text("Message"), message:  Text("Uploaded Successfully!!!"), dismissButton: .default(Text("OK")))
+                Alert(title: Text("Message"), message:  Text("Uploaded Successfully!!"), dismissButton: .default(Text("OK")))
             }
         }
     }
